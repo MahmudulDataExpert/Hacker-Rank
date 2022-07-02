@@ -5,8 +5,9 @@ three characters of each name. If two or more students both have names ending in
 /*
 
 Solution:
+
 SELECT NAME
     FROM STUDENTS
 WHERE MARKS > 75
-    ORDER BY NAME DESC
-    nOT COMPLTE
+    ORDER BY RIGHT(NAME,3) ASC,
+    ID ASC;
