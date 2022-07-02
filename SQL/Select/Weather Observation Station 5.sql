@@ -26,5 +26,12 @@ The longest name is PQRS, but there are  options for shortest named city. Choose
 */
 
 Solution:
-
-
+(SELECT CITY, LENGTH(CITY)
+    FROM STATION
+ORDER BY LENGTH(CITY) ASC, CITY
+    LIMIT 1)
+UNION
+(SELECT CITY, LENGTH(CITY)
+    FROM STATION
+ORDER BY LENGTH(CITY) DESC, CITY
+    LIMIT 1);
