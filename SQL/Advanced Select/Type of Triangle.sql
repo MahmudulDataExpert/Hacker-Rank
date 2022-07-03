@@ -18,3 +18,11 @@ Each row in the table denotes the lengths of each of a triangle's three sides.
 */
 
 Solution:
+SELECT
+    CASE
+        WHEN A=B OR B=C OR A=C THEN "Isosceles"
+        WHEN A=B AND B=C THEN "Equilateral"
+        WHEN A+B<=C OR B+C<=A OR A+C<=B THEN "Not A Triangle"
+        ELSE "Scalene"
+    END AS triangles_type
+FROM TRIANGLES;
