@@ -16,6 +16,11 @@ Note: There will be at least two entries in the table for each type of occupatio
 */
 
 Solution:
-SELECT NAME, LEFT(OCCUPATION,1)
+SELECT CONCAT(NAME, '(', SUBSTRING(OCCUPATION, 1, 1), ')') AS NAME
     FROM OCCUPATIONS
-ORDER BY NAME ASC;
+ORDER BY NAME;
+
+SELECT CONCAT('There are a total of ', COUNT(Occupation), ' ', LOWER(Occupation), 's.') AS PROFESSION
+    FROM OCCUPATIONS 
+GROUP BY OCCUPATION 
+    ORDER BY COUNT(Occupation), PROFESSION;
