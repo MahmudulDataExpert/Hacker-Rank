@@ -5,3 +5,7 @@ employees who have maximum total earnings. Then print these values as 2 space-se
 
 */
 
+Solution;
+SELECT MAX(salary*months), COUNT(salary*months)
+FROM Employee
+WHERE (salary*months)=(SELECT MAX(salary*months) FROM Employee);
