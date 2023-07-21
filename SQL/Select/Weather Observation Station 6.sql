@@ -11,7 +11,6 @@ The STATION table is described as follows:
 | LAT_IN      | VARCHAR2(20) |
 | LONG_W      | NUMBER       |
 ------------------------------
-
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 /*
 Solution:
