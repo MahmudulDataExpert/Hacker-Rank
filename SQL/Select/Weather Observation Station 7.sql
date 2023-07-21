@@ -10,7 +10,6 @@ The STATION table is described as follows:
 | LAT_IN      | VARCHAR2(20) |
 | LONG_W      | NUMBER       |
 ------------------------------
-
 Solution:
 SELECT DISTINCT(CITY)
     FROM STATION
