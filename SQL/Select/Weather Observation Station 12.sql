@@ -14,7 +14,6 @@ The STATION table is described as follows:
 | LONG_W      | NUMBER       |
 ------------------------------
 */
-
 Solution:
 SELECT DISTINCT(CITY)
     FROM STATION
