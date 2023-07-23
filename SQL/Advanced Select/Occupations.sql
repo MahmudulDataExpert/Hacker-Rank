@@ -3,7 +3,6 @@ pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabeti
 
 Note: Print NULL when there are no more names corresponding to an occupation.
 */
-
 SELECT
     Doctor,
     Professor,
