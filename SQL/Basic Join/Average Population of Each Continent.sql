@@ -7,5 +7,7 @@ Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 
 Solution:
 SELECT country.continent, FLOOR(AVG(City.Population))
-FROM city INNER JOIN country ON city.countrycode=country.code
-GROUP BY country.continent;
+FROM city 
+  INNER JOIN country 
+ON city.countrycode=country.code
+  GROUP BY country.continent;
